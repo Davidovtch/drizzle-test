@@ -1,0 +1,19 @@
+{
+  "imports": {
+    "drizzle-kit": "npm:drizzle-kit@^0.28.1",
+    "drizzle-orm": "npm:drizzle-orm@^0.36.3",
+    "hono": "jsr:@hono/hono@^4.6.10",
+    "postgres": "npm:postgres@^3.4.5"
+  },
+  "tasks": {
+    "start": "deno run --allow-net main.ts",
+    "dev": "deno run -A --env-file main.ts",
+    "db:push": "deno run -A --node-modules-dir npm:drizzle-kit push",
+    "db:gen": "deno run -A --node-modules-dir npm:drizzle-kit generate",
+    "db:mig": "deno run -A --node-modules-dir npm:drizzle-kit migrate"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
