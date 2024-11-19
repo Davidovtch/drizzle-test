@@ -8,6 +8,13 @@
       "when": 1732018800863,
       "tag": "0000_last_fat_cobra",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1732043094452,
+      "tag": "0001_handy_dreaming_celestial",
+      "breakpoints": true
     }
   ]
 }
